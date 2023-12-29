@@ -18,7 +18,7 @@ st.title("EEG Classification App")
 st.write("Upload csv file containing EEG signal with 19 channel [Fp1, Fp2, F3, F4, F7, F8, T3,T4, C3, C4, T5, T6, P3, P4, O1, O2, Fz, Cz, Pz]")
 st.write("Input example [s00.csv](https://drive.google.com/file/d/1wrWdREzw4z6rSK0kO3zkcYuHqjCz21Tp/view?usp=sharing)")
 
-uploaded_file = st.file_uploader("Upload file with format .csv")
+uploaded_file = st.file_uploader("Upload file with format .csv", type="csv")
 
 if uploaded_file is not None:
     # read csv
