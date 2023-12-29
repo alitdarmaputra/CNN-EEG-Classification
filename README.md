@@ -3,6 +3,7 @@
 ### Description
 
 EEG Classification App with Streamlit using a trained CNN model
+
 This app will classify EEG signal and determine whether the subject is a Good counter or Bad counter (for whom the mental task required excessive efforts).
 
 ### Contributor
