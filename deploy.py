@@ -46,7 +46,7 @@ if st.button('Classify', key='classify_button'):
         # the predicted class is 1
             st.write(f"The subject is a Good Counter")
         else:
-    # otherwise the predicted class is 0
+        # otherwise the predicted class is 0
             st.write(f"The subject is a Bad Counter")
     else:
         st.warning("you need to upload a csv file.")
