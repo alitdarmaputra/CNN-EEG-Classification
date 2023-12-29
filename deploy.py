@@ -11,7 +11,7 @@ model.compile(loss='binary_crossentropy', optimizer='adam',metrics=['acc',tf.ker
 
 st.sidebar.subheader('About the App')
 st.sidebar.write('EEG Classification App with Streamlit using a trained CNN model')
-st.sidebar.write('This app will classify EEG signal and classify whether the subject is a Good counter or Bad counter (for whom the mental task required excessive efforts).')
+st.sidebar.write('This app will classify EEG signal and determine whether the subject is a Good counter or Bad counter (for whom the mental task required excessive efforts).')
 
 #start the user interface
 st.title("EEG Classification App")
@@ -26,7 +26,7 @@ if uploaded_file is not None:
     signal = signal.transpose().to_numpy()
     signal = signal.reshape(760,775)
 
-    channel_index = st.selectbox("Select Dynamic", options=[i+1 for i in range(signal.shape[0])])
+    channel_index = st.selectbox("Select Channel", options=[i+1 for i in range(signal.shape[0])])
     
     # visualize signal
     plt.plot(signal[channel_index-1])
