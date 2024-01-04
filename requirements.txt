@@ -25,7 +25,6 @@ grpcio==1.60.0
 h5py==3.10.0
 idna==3.6
 importlib-metadata==6.11.0
-ipython==8.18.1
 jedi==0.19.1
 Jinja2==3.1.2
 jsonschema==4.20.0
